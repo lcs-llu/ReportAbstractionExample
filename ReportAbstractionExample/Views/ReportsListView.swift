@@ -22,7 +22,7 @@ struct ReportsListView: View {
                 
                 
                 NavigationLink(destination: {
-                    Text("\(currentReport.grade)")
+                    ReportDetailView(thisReport: currentReport)
                 }, label: {
                     Text(currentReport.name)
                     
