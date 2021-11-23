@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct Report {
+
+// Report structure "promises" to follow the rules of the Identifiable protocol
+// This means it must have an "id" property
+struct Report: Identifiable {
     
+    let id = UUID()
     let name: String
     let grade: Int
     let comment: String
